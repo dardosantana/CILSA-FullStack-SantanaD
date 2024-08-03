@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Formulario de Datos Personales</title>
+        <link rel="stylesheet" href="estilo1.css">
+    </head>
+    <body>
+        <div class="contenido">
+            <h1>Formulario de Datos Personales</h1>
+            <form id="miFormulario" action="" novalidate>
+                <div class="formulario">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" >
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="abc@mail.com" >
+
+                    <label for="Fecha">Fecha de Nacimiento:</label>
+                    <input type="date" id="Fecha" name="Fecha" >
+
+                    <label for="Residencia">País de Residencia:</label>
+                    <select id="Residencia" name="Residencia" >
+                        <option value="">Seleccione un país</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Guyana">Guyana</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Surinam">Surinam</option>
+                        <option value="Trinidad y Tobago">Trinidad y Tobago</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Venezuela">Venezuela</option>
+                    </select>
+                    <button type="submit">Enviar</button>
+                </div>
+           </form>
+        </div>
+    </body>
+</html>

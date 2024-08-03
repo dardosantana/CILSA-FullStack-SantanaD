@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image:url(cabeza.jpg); 
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 50px 0;
+}
+
+nav {
+    background-color: #001f33;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(83, 248, 1);
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgb(243, 245, 242);
+    border-radius: 8px;
+    margin: 8px;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+    box-shadow: 0 0 10px rgb(83, 248, 1);
+}
+
+.container {
+    overflow: hidden; /* Clear floats */
+    background-color: #001f33;
+    padding: 20px;
+}
+
+section {
+    float: right;
+    width: 75%;
+    background-color: #ff4d4d;
+    padding: 20px;
+}
+
+aside {
+    border: 2px solid black;
+    border-radius: 15px;
+    float: left;
+    width: 20%;
+    background-color: #bfbfbf;
+    padding: 20px;
+}
+
+footer {
+    clear: both;
+    background-color: #001f33;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

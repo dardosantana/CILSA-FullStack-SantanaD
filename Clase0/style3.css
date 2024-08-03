@@ -1,0 +1,82 @@
+body{
+    background-color: gray;
+    display: grid;
+    grid-template-areas: 'encabezado encabezado encabezado'
+    'navegacion principal lateral'
+    'pie pie pie';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    
+    gap:10px;
+    height: 100vh;
+    margin: 10;
+    
+} 
+header{
+    grid-area: encabezado;
+    background-color: rgb(66, 63, 63);
+    background-size: cover;
+    background-position: center;
+    color:rgb(231, 49, 210);
+    text-align: center;
+    padding: 50px ;
+
+}
+.linea {
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(35, 35, 59);
+    padding: 10px;
+}
+
+nav{
+    background-color: #333;
+    overflow: hidden;
+}
+nav ul{
+    margin: 0;
+    padding: 10;
+}
+nav ul li{
+    flex: 1;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration:none;
+}
+
+main{
+    grid-area: navegacion;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: greenyellow;
+}
+.columna{
+    flex: 1;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: goldenrod;
+}
+
+.columna:nth-child(1){
+    grid-area: principal;
+    background-color: rgb(10, 233, 77);
+    }
+.columna:nth-child(2){
+    grid-area: lateral;
+    background-color: rgb(15, 238, 238);
+}
+
+footer{
+    grid-area: pie;
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 1em;
+}
+
+

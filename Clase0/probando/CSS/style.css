@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* CSS */
+.brand-name {
+    align-items: center;
+    font-family: 'Times New Roman'; /* Cambia esta línea a la fuente que prefieras */
+    font-size: 30px; /* Ajusta el tamaño de la fuente */
+    font-weight:lighter; /* Puedes cambiar esto a 'normal', 'lighter', o valores numéricos (100-900) */
+    color: #ffffff; /* Cambia el color del texto */
+    letter-spacing: 2px; /* Ajusta el espaciado entre letras */
+    text-transform: none; /* Cambia esto a 'none' si no quieres que todas las letras sean mayúsculas */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade un efecto de sombra al texto */
+}
+
+h1 {
+    color: #007bff;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+
+/* Carrusel styles */
+.carousel-item img {
+    object-fit: cover;
+    max-height: 400px;
+    width: 100%;
+    border: 2px solid #dee2e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    color: #6c757d;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer a img {
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+footer a img:hover {
+    filter: none;
+}

@@ -1,0 +1,119 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --header-bg-color: #333333;
+    --header-text-color: #ffffff;
+    --footer-bg-color: #333333;
+    --footer-text-color: #ffffff;
+}
+
+body.dark-mode {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --header-bg-color: #111111;
+    --header-text-color: #ffffff;
+    --footer-bg-color: #111111;
+    --footer-text-color: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header img.logo {
+    height: 50px;
+}
+
+header nav a {
+    color: var(--header-text-color);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.product-detail {
+    display: flex;
+}
+
+.product-detail img {
+    width: 200px;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.product-info h2 {
+    margin: 0;
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.toggle-theme-label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-theme-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-theme-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.toggle-theme-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.toggle-theme-input:checked + .toggle-theme-slider {
+    background-color: #2196F3;
+}
+
+.toggle-theme-input:checked + .toggle-theme-slider:before {
+    transform: translateX(26px);
+}

@@ -1,0 +1,50 @@
+.card-light {
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 1px 5px 30px rgba(0,0,0,0.8);
+}
+.card-dark {
+    background-color: rgb(51, 50, 50);
+    border: 2px solid yellowgreen;
+    box-shadow: 1px 5px 30px rgba(189, 240, 6, 0.8);
+}
+.bg-dark {
+    background-color: #343a40 !important;
+}.text-white {
+    color: white !important;
+}
+
+.form-switch .form-check-input {
+    width: 50px;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 25px;
+    position: relative;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.form-switch .form-check-input:before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+}
+
+.form-switch .form-check-input:checked {
+    background-color: #4caf50;
+}
+
+.form-switch .form-check-input:checked:before {
+    transform: translateX(25px);
+}
+.alert {
+    margin-top: 20px;
+}

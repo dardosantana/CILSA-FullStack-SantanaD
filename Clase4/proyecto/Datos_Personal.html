@@ -1,0 +1,56 @@
+*<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Formulario de Datos Personales</title>
+    <link rel="stylesheet" href="estiloClaro.css">
+</head>
+<body>
+    <div class="contenido">
+        <h1>Datos Personales</h1>
+        <form id="miFormulario" action="" >
+            <div class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required aria-label="Nombre completo" aria-describedby="nombreHelp">
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required aria-label="Apellido" aria-describedby="apellidoHelp">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="abc@mail.com" aria-label="Correo electrónico" aria-describedby="emailHelp">
+                <div id="emailAlert" class="alert">
+                    <span id="emailAlertText"></span>
+                </div>
+
+                <label for="Fecha">Fecha de Nacimiento:</label>
+                <input type="date" id="Fecha" name="Fecha" required aria-label="Fecha de nacimiento" aria-describedby="fechaHelp">
+
+                <label for="Residencia">País de Residencia:</label>
+                <select id="Residencia" name="Residencia" required aria-label="País de residencia" aria-describedby="residenciaHelp">
+                    <option value="">Seleccione un país</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Guyana">Guyana</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Surinam">Surinam</option>
+                    <option value="Trinidad y Tobago">Trinidad y Tobago</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Venezuela">Venezuela</option>
+                </select>
+
+                <button type="submit" aria-label="Enviar formulario">Enviar</button>
+            </div>
+        </form>
+        <div class="button-container">
+            <button onclick="CambioDeEstilo()">Claro / Oscuro</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Formulario de Datos Personales</title>
+    <link rel="stylesheet" href="estilo4.css">
+</head>
+<body>
+    <div class="contenido">
+        <h1>Formulario de Datos Personales</h1>
+        <form id="miFormulario" action="">
+            <div class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required aria-label="Nombre completo" aria-describedby="nombreHelp">
+                <small id="nombreHelp">Introduce tu nombre completo.</small>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required aria-label="Apellido" aria-describedby="apellidoHelp">
+                <small id="apellidoHelp">Introduce tu apellido.</small>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="abc@mail.com" aria-label="Correo electrónico" aria-describedby="emailHelp">
+                <small id="emailHelp">Introduce tu dirección de correo electrónico.</small>
+                <div id="emailAlert" class="alert">
+                    <span class="alert-icon">&#9888;</span>
+                    <span id="emailAlertText"></span>
+                </div>
+
+                <label for="Fecha">Fecha de Nacimiento:</label>
+                <input type="date" id="Fecha" name="Fecha" required aria-label="Fecha de nacimiento" aria-describedby="fechaHelp">
+                <small id="fechaHelp">Introduce tu fecha de nacimiento en formato día/mes/año.</small>
+
+                <label for="Residencia">País de Residencia:</label>
+                <input id="Residencia" name="Residencia" required aria-label="País de residencia" aria-describedby="residenciaHelp">
+                <small id="residenciaHelp">Introduce el país donde resides actualmente.</small>
+
+                <button type="submit" aria-label="Enviar formulario">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="script4.js"></script>
+</body>
+</html>

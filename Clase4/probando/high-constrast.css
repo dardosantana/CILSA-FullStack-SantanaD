@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 400px; /* Ajustar ancho máximo del formulario */
+    margin: auto; /* Centrar el contenido */
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #ff0;
+    text-transform: uppercase;
+    margin-top: 0; /* Ajustar margen superior del título */
+}
+
+label {
+    font-weight: bold;
+    color: #ff0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ff0;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff0;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffcc00;
+}
+
+.theme_button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ff0;
+    color: #000;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.theme_button:hover {
+    background-color: #ffcc00;
+}
+
+.success-message {
+    display: none;
+    background-color: #ff0;
+    color: #000;
+}
+
+.btn-high-contrast {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.btn-high-contrast:hover {
+    background-color: #1d2124;
+}
