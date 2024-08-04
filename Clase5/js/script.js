@@ -1,4 +1,3 @@
-
 // Bootstrap validation
 (function() {
     'use strict';
@@ -20,7 +19,6 @@
 function CambioDeEstilo() {
     var body = document.body;
     var card = document.getElementById('tarjeta');
-// mantener constrate anterior y no restablecer
 
     if (body.classList.contains('bg-light')) {
         body.classList.remove('bg-light');

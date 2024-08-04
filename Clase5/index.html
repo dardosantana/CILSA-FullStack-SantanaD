@@ -1,73 +1,72 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulario de Datos Personales</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" id="estiloCSS">
-        <link rel="stylesheet" href="../Clase5/css/style.css">
-    </head>
-    <body class="bg-light">
-        <div class="container mt-3 mb-5">
-            <div class="card card-light" id="tarjeta">
-                <div class="card-header text-center">
-                    <h1>Formulario de Datos Personales</h1>
-                </div>
-                <div class="form-check form-switch mt-3 ml-3">
-                    <input class="form-check-input" type="checkbox" id="switchEstilo" onchange="CambioDeEstilo()">
-                    <label class="form-check-label" for="switchEstilo">Contraste</label>
-                </div>            
-                <div class="card-body ">
-                    <form id="miFormulario" class="needs-validation" novalidate>
-                        <div class="form-group">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" required>
-                            <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
-                        </div>
-                        <div class="form-group">
-                            <label for="apellido">Apellido:</label>
-                            <input type="text" class="form-control" id="apellido" name="apellido" required>
-                            <div class="invalid-feedback">Por favor, ingresa tu apellido.</div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="abc@mail.com" required>
-                            <div class="invalid-feedback">Por favor, ingresa un correo electrónico válido.</div>
-                        </div>
-                        <div class="form-group">
-                            <label for="Fecha">Fecha de Nacimiento:</label>
-                            <input type="date" class="form-control" id="Fecha" name="Fecha" required>
-                            <div class="invalid-feedback">Por favor, ingresa tu fecha de nacimiento.</div>
-                        </div>
-                        <div class="form-group">
-                            <label for="Residencia">País de Residencia:</label>
-                            <select id="Residencia" name="Residencia" class="form-control" required>
-                                <option value="">Seleccione un país</option>
-                                <option value="Argentina">Argentina</option>
-                                <option value="Bolivia">Bolivia</option>
-                                <option value="Brasil">Brasil</option>
-                                <option value="Chile">Chile</option>
-                                <option value="Colombia">Colombia</option>
-                                <option value="Ecuador">Ecuador</option>
-                                <option value="Guyana">Guyana</option>
-                                <option value="Paraguay">Paraguay</option>
-                                <option value="Peru">Peru</option>
-                                <option value="Surinam">Surinam</option>
-                                <option value="Trinidad y Tobago">Trinidad y Tobago</option>
-                                <option value="Uruguay">Uruguay</option>
-                                <option value="Venezuela">Venezuela</option>
-                            </select>
-                            <div class="invalid-feedback">Por favor, selecciona tu país de residencia.</div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                    
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" id="estiloCSS">
+    <link rel="stylesheet" href="../Clase5/css/style.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-3 mb-5">
+        <div class="card card-light" id="tarjeta">
+            <div class="card-header text-center">
+                <h1>Formulario de Datos Personales</h1>
+            </div>
+            <div class="form-check form-switch mt-3 ml-3">
+                <input class="form-check-input" type="checkbox" id="switchEstilo" onchange="CambioDeEstilo()">
+                <label class="form-check-label" for="switchEstilo">Contraste</label>
+            </div>            
+            <div class="card-body">
+                <form id="miFormulario" class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido" required>
+                        <div class="invalid-feedback">Por favor, ingresa tu apellido.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="abc@mail.com" required>
+                        <div class="invalid-feedback">Por favor, ingresa un correo electrónico válido.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Fecha">Fecha de Nacimiento:</label>
+                        <input type="date" class="form-control" id="Fecha" name="Fecha" required>
+                        <div class="invalid-feedback">Por favor, ingresa tu fecha de nacimiento.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Residencia">País de Residencia:</label>
+                        <select id="Residencia" name="Residencia" class="form-control" required>
+                            <option value="">Seleccione un país</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Surinam">Surinam</option>
+                            <option value="Trinidad y Tobago">Trinidad y Tobago</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Venezuela">Venezuela</option>
+                        </select>
+                        <div class="invalid-feedback">Por favor, selecciona tu país de residencia.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="../Clase5/js/script.js"></script>
-    </body>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../Clase5/js/script.js"></script>
+</body>
 </html>
